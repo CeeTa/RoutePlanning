@@ -1,0 +1,75 @@
+    #map {
+            height: 720px;
+        }
+        body {
+            height:720px;
+        }
+        .ui-dialog {
+            z-index: 2000 !important;
+            background-color: white;
+        }
+        .dialog-table {
+                background-color: white;
+                font-family: "微軟正黑體";
+        }
+        .btn.selected {
+                color: #428bca;
+                background-color: lemonchiffon;
+        }
+        /*.ui-dialog-titlebar {
+            background-color: skyblue;
+            font-family: "微軟正黑體";
+            font-size: 18px;
+            line-height: 2;
+            font-weight: bold;
+        }*/
+        .ui-widget-header {
+            background-color: skyblue;
+            font-family: "微軟正黑體";
+            font-size: 18px;
+            line-height: 2;
+            font-weight: bold;
+        }
+        .ui-dialog-title {
+            /*margin:40%;*/
+            text-align: center;
+            margin-left: 5% !important;
+        }
+        /*.ui-dialog-titlebar-close {
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            right: 0.5%;
+            top: 1.5%;
+            font-size: 10px;
+            background-color: #fff;
+            border-color: #ccc;
+            border-radius: 6px;
+            border: 1px solid transparent;
+        }*/
+        .ui-dialog-buttonpane {
+            height:30px;
+        }
+        .loader {
+            position:fixed;
+            display : block;
+            z-index: 3000;
+            margin-left: 50%;
+            margin-top: 22%;
+            left: 0;bottom: 0;right: 0;top: 0;
+            visibility:hidden;
+        }
+        @media (max-width: 800px)
+        {
+            .loader {
+                margin-top: 44%;
+            }
+        }
+        .ball-clip-rotate-multiple>div{
+                border: 2px solid black !important;
+                    border-bottom-color: transparent !important;
+                    border-top-color: transparent !important;
+        }
+            .ball-clip-rotate-multiple > div:last-child {
+                border-color: black transparent !important;
+            }
