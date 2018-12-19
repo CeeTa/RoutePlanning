@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link href="scripts/leaflet/leaflet.css" rel="stylesheet" />
+    <script src="scripts/jquery-ui-1.11.0/external/jquery/jquery.js"></script>
+    <script src="scripts/leaflet/leaflet.js"></script>
+    <script src="scripts/Leaflet.SelectAreaFeature.js"></script>
+    <script src="scripts/leaflet-pip.js"></script>
+    <script src="scripts/Polyline.encoded.js"></script>
+    <script src="scripts/wicket-leaflet.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="scripts/jquery-ui-1.11.0/jquery-ui.js"></script>
+    <link href="scripts/jquery-ui-1.11.0/jquery-ui.css" rel="stylesheet" />
+    <script src="scripts/jquery-dialogextend.js"></script>
+    <link href="styles/loaders.min.css" rel="stylesheet" />
+    <script src="scripts/loaders.css.js"></script>
+    <script src="scripts/FileSaver.min.js"></script>
+    <script src="scripts/jsSHA.js"></script>
+    <script src="scripts/index.js"></script>
+    <link href="styles/index.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="map"></div>
+    <div style="cursor:pointer;position:absolute;right:10px;top:10px;z-index:1000;">
+        <p><button id="btnDraw" type="button" class="btn btn-default btn-lg"  title="框選範圍">
+            <span data-default-show="true" class="glyphicon glyphicon-pencil"></span>
+        </button></p>
+        <p>
+            <button id="btnSubmit" type="button" class="btn btn-default btn-lg disabled" title="確定框選">
+                <span data-default-show="false" class="glyphicon glyphicon-ok-circle"></span>
+            </button>
+        </p>
+        <p><button id="btnClear" type="button" class="btn btn-default btn-lg disabled" title="清除圖層">
+            <span data-default-show="false" class="glyphicon glyphicon-refresh"></span>
+        </button></p>
+    </div>
+    <div id="dialog-modal" title="路線改道列表" style="display:none;overflow:auto">
+        <table class="dialog-table table table-bordered table-hover table-condensed" style="text-align:center">
+            <thead>
+                <tr>
+                    <th width="150px" style="text-align: center;">改道公車</th>
+                    <th width="150px" style="text-align: center;">影響站位</th>
+                    <th width="250px" style="text-align: center;">改道路線</th>
+                    <th width="120px" style="text-align: center;">距離差異(公尺)</th>
+                    <th width="120px" style="text-align: center;">時間差異(分)</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <div class="loader"><div class="ball-clip-rotate-multiple"><div></div><div></div></div><div id="loaderText"></div></div>
+</body>
+
+</html>
